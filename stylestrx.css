@@ -1,0 +1,121 @@
+/* Genel Ayarlar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0d1a2b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-image: url('1.jpg'); /* Gif URL'sini buraya ekleyin */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Gif'in ekranı kaplamasını sağlar */
+}
+
+/* Ana Uygulama Konteyneri */
+.app-container {
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Wallet Listesi */
+.wallet-list {
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0.5); /* Opaklık ekleyerek arka planın görünmesini sağlar */
+    padding: 10px;
+    border-radius: 8px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    font-size: 120px;
+}
+
+/* Kontrol Butonları */
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.stop-btn {
+    background-color: #d14c4c;
+    color: white;
+}
+
+.start-btn {
+    background-color: #4c9bd1;
+    color: white;
+}
+
+/* Inspection Özeti */
+.inspection-summary {
+    font-size: 16px;
+    color: #b0c4de;
+    background-color: rgba(0, 0, 0, 0.5); /* Opaklık eklenmiş */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Bulunan Cüzdan */
+.found-wallets {
+    background-color: rgba(0, 0, 0, 0.5); /* Opaklık eklenmiş */
+    padding: 80px;
+    border-radius: 8px;
+    color: #b0c4de;
+    text-align: center;
+}
+
+.found-wallets h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+/* Bulunan cüzdan adresleri bölümü */
+.found-box {
+    width: 90%;
+    max-width: 600px;
+    height: 45px; /* Varsayılan yükseklik */
+    overflow-y: auto; /* Dikey kaydırma */
+    border: 1px solid bulu;
+    padding: 1px;
+    background-color: white; /* Opaklık eklenmiş */
+    resize: vertical; /* Yukarı-aşağı boyutlandırma */
+    box-sizing: border-box;
+    font-size: 17px;
+    line-height: 0;
+}
+
+.wallet-address {
+    font-size: 14px;
+    color: #b0c4de;
+    word-wrap: break-word;
+}

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Wallet Checker</title> 
+  <link rel="stylesheet" href="stylestrx.css"> 
+ </head> 
+ <body> 
+  <div class="app-container"> <!-- Wallet List --> 
+   <div id="scan-results" class="wallet-list"> <!-- Cüzdan adresleri buraya eklenecek --> 
+   </div> <!-- Control Buttons --> 
+   <div class="controls"> <button id="stopBtn" class="stop-btn">STOP</button> <button id="startBtn" class="start-btn">START</button> 
+   </div> <!-- Inspection Summary --> 
+   <div class="inspection-summary"> 
+    <p id="checked">Checked: 0</p> 
+   </div> <!-- Found Wallet Section --> 
+   <div class="found-wallets"> 
+    <h3>FOUND TRX </h3> 
+    <div class="found-box"> 
+     <img id="found-logo" style="display: none; width: 24px;"> <span id="found-amount"></span> 
+    </div> 
+    <div id="found-words" class="wallet-address">
+      No wallets found yet. 
+    </div> 
+   </div> 
+  </div> 
+  <script src="scripttrx.js"></script> 
+ </body>
+</html>
